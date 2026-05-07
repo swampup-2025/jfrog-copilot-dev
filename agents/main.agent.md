@@ -10,6 +10,8 @@ mcp-servers:
     oidc:
       grant-type: "urn:ietf:params:oauth:grant-type:token-exchange"
       audience: "jfrog-mcp"
+      endpoints:
+        exchange: "${{ vars.JF_URL }}/access/api/v1/oidc/token"
 ---
 
 You are a JFrog domain expert. (Smoke-test placeholder agent.)
