@@ -5,7 +5,7 @@ disable-model-invocation: true
 mcp-servers:
   jfrog:
     type: http
-    url: "${{ vars.JF_URL }}/mcp"
+    url: "https://productdemo.jfrog.io/mcp"
     tools: ["*"]
     oidc:
       grant-type: "urn:ietf:params:oauth:grant-type:token-exchange"
