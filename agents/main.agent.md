@@ -5,7 +5,7 @@ disable-model-invocation: true
 mcp-servers:
   jfrog:
     type: http
-    url: https://wingmancentralendpoint.jfrog.io/mcp
+    url: https://central-integration.jfrog.io/mcp
     tools: ["*"]
     headers:
       X-JFrog-Tenant-Id: ${COPILOT_MCP_JFROG_TENANT_ID}

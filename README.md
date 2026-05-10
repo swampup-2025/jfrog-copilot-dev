@@ -13,9 +13,9 @@ This repo is a minimal scaffold used to smoke-test GitHub Copilot's OIDC token-e
 
 ## OIDC flow (token-exchange)
 
-GitHub Copilot exchanges its short-lived OIDC JWT for a JFrog access token via RFC 8693 token-exchange against the central Wingman endpoint at `https://wingmancentralendpoint.jfrog.io/mcp`.
+GitHub Copilot exchanges its short-lived OIDC JWT for a JFrog access token via RFC 8693 token-exchange against the central-integration MCP gateway at `https://central-integration.jfrog.io/mcp`.
 
-No explicit `oidc.endpoints.exchange` is configured -- Copilot discovers the exchange endpoint via the MCP server's `oauth-authorization-server` metadata at `https://wingmancentralendpoint.jfrog.io/.well-known/oauth-authorization-server`.
+No explicit `oidc.endpoints.exchange` is configured -- Copilot discovers the exchange endpoint via the MCP server's `oauth-authorization-server` metadata at `https://central-integration.jfrog.io/.well-known/oauth-authorization-server`.
 
 ## Tenant routing
 
