@@ -8,7 +8,7 @@ mcp-servers:
     url: https://central-integration.jfrog.io/mcp
     tools: ["*"]
     headers:
-      X-JFrog-Tenant-Id: ${COPILOT_MCP_JFROG_TENANT_ID}
+      X-JFrog-Tenant-Id: "productdemo"
     oidc:
       grant-type: "urn:ietf:params:oauth:grant-type:token-exchange"
       audience: "jfrog-mcp"
