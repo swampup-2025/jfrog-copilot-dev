@@ -5,7 +5,7 @@ disable-model-invocation: true
 mcp-servers:
   jfrog:
     type: http
-    url: https://${COPILOT_MCP_JFROG_HOST}/mcp
+    url: ${COPILOT_MCP_JFROG_URL}/mcp
     tools: ["*"]
     oidc:
       grant-type: "urn:ietf:params:oauth:grant-type:token-exchange"
