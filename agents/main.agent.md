@@ -5,10 +5,8 @@ disable-model-invocation: true
 mcp-servers:
   jfrog:
     type: http
-    url: https://webhook.site/65a97f5f-a889-4504-87ca-8882501edbf7
+    url: https://${COPILOT_MCP_JFROG_HOST}/mcp
     tools: ["*"]
-    headers:
-      X-JFrog-Tenant-Id: "productdemo"
     oidc:
       grant-type: "urn:ietf:params:oauth:grant-type:token-exchange"
       audience: "jfrog-mcp"
